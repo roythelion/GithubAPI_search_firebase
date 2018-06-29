@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400,400i,500,600,700i');
+
+
+
+.avatar {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+body{
+    margin:0;
+    font-family: 'Raleway', sans-serif;
+    font-size:1rem;
+    font-weight:400;
+    line-height:1.5;
+    color:#fff;
+    text-align: justify;
+    background-image: url("../images/bg.jpg");
+    overflow: auto;
+    }
+
+
+div.searchContainer1{
+	margin-top: 40px;
+}
+
+b{
+	font-weight: 600;
+	font-size: 1em;
+
+}
+
+
+/*Preloader*/
+
+.loader{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+z-index: 9999;
+background: #333;
+color: white;
+}
+
+
+/*tablas*/
+
+#tbl_users_list {
+    font-family: 'Raleway', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tbl_users_list td, #tbl_users_list  th {
+   padding: 5px;
+    border-radius: 5px;
+  
+}
+
+#tbl_users_list  tr:nth-child(even){background-color: #000;}
+
+#tbl_users_list  tr:hover {background-color: #000;}
+
+#tbl_users_list  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #007bff;
+    color: white;
+}

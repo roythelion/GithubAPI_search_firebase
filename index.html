@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Busqueda Github</title>
+
+  <!--Conexion Firebase-->
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script>
+  // firebaseRealtime
+  var config = {
+    apiKey: "AIzaSyBJQ6vxTSpKEIvZfCSOa77fjDcQnnDNqRw",
+    authDomain: "fir-realtime-db-web-3c593.firebaseapp.com",
+    databaseURL: "https://fir-realtime-db-web-3c593.firebaseio.com",
+    projectId: "fir-realtime-db-web-3c593",
+    storageBucket: "fir-realtime-db-web-3c593.appspot.com",
+    messagingSenderId: "1048879227945"
+  };
+  firebase.initializeApp(config);
+
+</script>
+
+
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--Bootstrap css + estilo + preloaders -->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/loaders.css">
+
+  
+</head>
+
+<body>
+<!-- preloader -->
+ <div class="loader">
+        <div class="loader-inner ball-spin-fade-loader">
+     
+        </div>
+      </div>
+<!--Fin preloader-->
+
+
+<main>
+ <div class="container">
+ 
+    <div class="searchContainer1">
+      <h1>Busqueda de perfiles GitHub</h1>
+      <!-- Buscador -->
+      <input type="search" id="searchUser" class="form-control" placeholder="Ingresa nombre..."></div>
+      <p class="lead">Ingresa nombre de usuario Github</p>
+      <br>
+  
+    <div class="main">
+      <section class="main row">
+        <div class="col-xs-12 col-md-6" id="profile"><h1>Perfil</h1><br></div>
+        <div class="col-xs-12 col-md-6" id=""><h1>Notas</h1>
+      <table>
+            <tr>
+              <td>No. Nota</td>
+              <td><input type="text" name="id" id="user_id" /></td>
+            </tr>
+                <tr>
+                  <td>Nota:</td>
+                  <td>
+                       <textarea name="user_name" id="user_name" rows="3" cols="60"></textarea>
+                  </td>
+                </tr>
+                  <tr>
+                    <td colspan="2">
+                      <input type="button" class="btn btn-danger"  value="Publicar" onclick="save_user();" />
+                      <input type="button" class="btn btn-danger"  value="Actualizar" onclick="update_user();" />
+                      <input type="button" class="btn btn-danger"  value="Borrar" onclick="delete_user();" />
+                    </td>
+                  </tr>
+       </table>
+
+
+                  <br>
+                   <h1>Lista Notas</h1>
+ 
+                   <table id="tbl_users_list" >
+                    <tr>
+                      <th>No. Nota</th>
+                      <th>Nota</th>
+                    </tr>
+                  </table>
+                  <br>
+                  <span>
+              
+                    <p><h3>Nota:</h3> Para Borrar/Actualizar cualquier nota se tiene que ingresar el numero de nota generado automaticamente en el campo "No. Nota"</p>
+                  </span>
+
+        </div>
+      </section>
+    </div>
+
+  </div>
+</main>
+   
+      
+
+    <!-- Bootstrap JavaScript -->
+    <!-- Javascript Carga rapdida de datos de usuario github-->
+    <!--Script preloader-->
+  
+    <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/dbrealtimeFB.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/loaders.css.js"></script>
+    
+
+</body>
+</html>
+  
